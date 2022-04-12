@@ -1,0 +1,32 @@
+{
+  "name": "httpbot",
+  "version": "1.0.0",
+  "description": "Helper Bot for WhatAreThoose, made using Typescript and Fastify",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsc -w",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhatAreThoose/helperbot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WhatAreThoose/helperbot/issues"
+  },
+  "homepage": "https://github.com/WhatAreThoose/helperbot#readme",
+  "dependencies": {
+    "fastify": "^3.28.0",
+    "fastify-raw-body": "^3.2.0",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
