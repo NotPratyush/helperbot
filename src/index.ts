@@ -10,7 +10,7 @@ app.register(fastifyRawBody, {
   runFirst: true,
 });
 
-app.addHook("preHandler", (req, res) => {
+app.addHook("preHandler", async (req, res) => {
   if (req.method === "POST" && req.routerPath === "/webhooks/interactions") {
     let signatureData = req.headers["x-signature-ed25519"];
     let timestampData = req.headers["x-signature-timestamp"];
